@@ -1,1 +1,18 @@
-<mat-toolbar color="primary">MyMessages</mat-toolbar>
+<mat-toolbar color="primary" class="d-flex justify-content-between">
+  <span>MyMessages</span>
+  <div>
+    <button
+      mat-button
+      routerLink="/"
+      [routerLinkActive]="'mat-button-toggle'"
+      [routerLinkActiveOptions]="{exact:true}">
+      List
+    </button>
+    <button
+      mat-button
+      routerLink="/create"
+      [routerLinkActive]="'mat-button-toggle'">
+      Create
+    </button>
+  </div>
+</mat-toolbar>
